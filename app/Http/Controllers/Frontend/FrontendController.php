@@ -15,11 +15,14 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        javascript()->put([
+        /*javascript()->put([
             'test' => 'it works!',
         ]);
 
-        return view('frontend.index');
+        return view('frontend.index');*/
+
+        //redirecting user to films interface/dashboard
+        return redirect()->route('films.index');
     }
 
     /**

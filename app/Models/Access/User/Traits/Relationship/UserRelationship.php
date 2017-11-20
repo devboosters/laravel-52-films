@@ -28,4 +28,18 @@ trait UserRelationship
     {
         return $this->hasMany(SocialLogin::class);
     }
+
+    /**
+     * @return mixed
+     */
+    public function films() {
+        return $this->hasMany('App\Models\Access\Film\Film');
+    }
+
+    /**
+     * @return mixed
+     */
+    public function comments() {
+        return $this->hasMany('App\Models\Access\Comment\Comment');
+    }
 }

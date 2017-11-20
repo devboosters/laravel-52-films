@@ -19,7 +19,7 @@ return [
     ],
 
     'frontend' => [
-        'dashboard' => 'Dashboard',
+        'dashboard' => 'User Dashboard',
         'login' => 'Login',
         'macros' => 'Macros',
         'register' => 'Register',

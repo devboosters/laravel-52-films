@@ -35,7 +35,10 @@ elixir(function(mix) {
       * Combine pre-processed frontend CSS files
       */
      .styles([
-        'frontend/app.css'
+        'frontend/app.css',
+        'plugin/datetimepicker/datetimepicker.css',
+        'plugin/bootstrap-rating/bootstrap-rating.css',
+        'plugin/bootstrap-select2/bootstrap-select2.css',
      ], 'public/css/frontend.css')
 
      /**
@@ -43,6 +46,10 @@ elixir(function(mix) {
       */
      .scripts([
         'plugin/sweetalert/sweetalert.min.js',
+        'plugin/datetimepicker/datetimepicker.min.js',
+        'plugin/bootstrap-rating/bootstrap-rating.min.js',
+        'plugin/bootstrap-select2/bootstrap-select2.min.js',
+        'plugin/jquery-form/jquery-form.min.js',
         'plugins.js',
         'frontend/app.js'
      ], 'public/js/frontend.js')

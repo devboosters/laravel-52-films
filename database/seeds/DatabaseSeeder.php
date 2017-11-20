@@ -18,6 +18,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call(AccessTableSeeder::class);
         $this->call(HistoryTypeTableSeeder::class);
+        $this->call(GenresTableSeeder::class);
+        $this->call(FilmsTableSeeder::class);
+        $this->call(FilmGenresTableSeeder::class);
+        $this->call(CommentsTableSeeder::class);
 
         Model::reguard();
     }

@@ -1,0 +1,90 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "text"
+        },
+        {
+            "name": "release_date",
+            "type": "date"
+        },
+        {
+            "name": "rating",
+            "type": "tinyint"
+        },
+        {
+            "name": "ticket_price",
+            "type": "double"
+        },
+        {
+            "name": "country",
+            "type": "select",
+            "options": {
+                "united-states": "United States",
+                "pakistan": "Pakistan",
+                "united-kingdom": "United Kingdom"
+            }
+        },
+        {
+            "name": "photo",
+            "type": "mediumtext"
+        },
+        {
+            "name": "user_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "user_id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "class": "App\\User"
+        }
+    ],
+    "validations": [
+        {
+            "field": "name",
+            "rules": "required"
+        },
+        {
+            "field": "description",
+            "rules": "required"
+        },
+        {
+            "field": "release_date",
+            "rules": "required"
+        },
+        {
+            "field": "rating",
+            "rules": "required"
+        },
+        {
+            "field": "ticket_price",
+            "rules": "required"
+        },
+        {
+            "field": "genre_name",
+            "rules": "required"
+        },
+        {
+            "field": "country",
+            "rules": "required"
+        },
+        {
+            "field": "photo",
+            "rules": "required"
+        }
+    ]
+}

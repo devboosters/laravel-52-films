@@ -1,0 +1,22 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "display_name",
+            "type": "text"
+        }
+    ],
+    "validations": [
+        {
+            "field": "name",
+            "rules": "required"
+        },
+        {
+            "field": "display_name",
+            "rules": "required"
+        }
+    ]
+}

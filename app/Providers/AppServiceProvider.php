@@ -64,11 +64,6 @@ class AppServiceProvider extends ServiceProvider
             $loader->alias('Debugbar', \Barryvdh\Debugbar\Facade::class);
 
             $this->app->register(\Laracasts\Generators\GeneratorsServiceProvider::class);
-
-            /**
-             * Registering CRUD Generator Service Provider
-             */
-            $this->app->register(\Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class);
         }
     }
 }

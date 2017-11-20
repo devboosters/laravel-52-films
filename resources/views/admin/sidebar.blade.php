@@ -1,14 +1,14 @@
 <div class="col-md-3">
     <div class="panel panel-default panel-flush">
         <div class="panel-heading">
-            Sidebar
+            Quick Links
         </div>
 
         <div class="panel-body">
             <ul class="nav" role="tablist">
                 <li role="presentation">
-                    <a href="{{ url('/admin') }}">
-                        Dashboard
+                    <a href="{{ url('/films') }}">
+                        Films Dashboard
                     </a>
                 </li>
             </ul>

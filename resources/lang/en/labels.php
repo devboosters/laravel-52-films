@@ -135,5 +135,22 @@ return [
             ],
         ],
 
+        'codeline_app' => [
+            'film' => [
+                'name' => 'Name',
+                'description' => 'Description',
+                'release_date' => 'Release Date',
+                'rating' => 'Rating',
+                'ticket_price' => 'Ticket Price ($)',
+                'country' => 'Country',
+                'genres' => 'Genres',
+                'photo' => 'Photo',
+            ],
+            'genre' => [
+                'name' => 'Name',
+                'display_name' => 'Display Name',
+            ]
+        ],
+
     ],
 ];

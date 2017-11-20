@@ -16,7 +16,7 @@ use Actuallymab\LaravelComment\CanComment;
 class User extends Authenticatable
 {
 
-    use SoftDeletes, UserAccess, UserAttribute, UserRelationship, CanComment;
+    use SoftDeletes, UserAccess, UserAttribute, UserRelationship;
 
     /**
      * The attributes that are mass assignable.
@@ -36,4 +36,12 @@ class User extends Authenticatable
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+    /**
+     * This will return true if currently logged in user is Admin
+     * @return bool
+     */
+    public function isAdmin() {
+        return ($this->id == 1) ? true : false;
+    }
 }
